@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		46E3C81E227390FB00511406 /* Wonder_Async.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E3C81C227390FB00511406 /* Wonder_Async.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46E3C82E2273912B00511406 /* InternetConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E3C8262273912A00511406 /* InternetConnectivityManager.swift */; };
+		46E3C82F2273912B00511406 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E3C8272273912A00511406 /* CacheManager.swift */; };
+		46E3C8302273912B00511406 /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E3C8292273912A00511406 /* CachedImageView.swift */; };
+		46E3C8312273912B00511406 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E3C82C2273912B00511406 /* WebService.swift */; };
+		46E3C8322273912B00511406 /* WebService+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E3C82D2273912B00511406 /* WebService+Download.swift */; };
+		46E3C8342273928E00511406 /* UnsplashImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E3C8332273928E00511406 /* UnsplashImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46E3C819227390FB00511406 /* Wonder_Async.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Wonder_Async.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E3C81C227390FB00511406 /* Wonder_Async.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wonder_Async.h; sourceTree = "<group>"; };
 		46E3C81D227390FB00511406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46E3C8262273912A00511406 /* InternetConnectivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetConnectivityManager.swift; sourceTree = "<group>"; };
+		46E3C8272273912A00511406 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		46E3C8292273912A00511406 /* CachedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
+		46E3C82C2273912B00511406 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		46E3C82D2273912B00511406 /* WebService+Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WebService+Download.swift"; sourceTree = "<group>"; };
+		46E3C8332273928E00511406 /* UnsplashImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsplashImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +58,56 @@
 		46E3C81B227390FB00511406 /* Wonder-Async */ = {
 			isa = PBXGroup;
 			children = (
+				46E3C8352273929F00511406 /* Model */,
+				46E3C8252273912A00511406 /* InternetManager */,
+				46E3C8282273912A00511406 /* CachedImageView */,
+				46E3C82A2273912A00511406 /* CacheManager */,
+				46E3C82B2273912A00511406 /* WebService */,
 				46E3C81C227390FB00511406 /* Wonder_Async.h */,
 				46E3C81D227390FB00511406 /* Info.plist */,
 			);
 			path = "Wonder-Async";
+			sourceTree = "<group>";
+		};
+		46E3C8252273912A00511406 /* InternetManager */ = {
+			isa = PBXGroup;
+			children = (
+				46E3C8262273912A00511406 /* InternetConnectivityManager.swift */,
+			);
+			path = InternetManager;
+			sourceTree = "<group>";
+		};
+		46E3C8282273912A00511406 /* CachedImageView */ = {
+			isa = PBXGroup;
+			children = (
+				46E3C8292273912A00511406 /* CachedImageView.swift */,
+			);
+			path = CachedImageView;
+			sourceTree = "<group>";
+		};
+		46E3C82A2273912A00511406 /* CacheManager */ = {
+			isa = PBXGroup;
+			children = (
+				46E3C8272273912A00511406 /* CacheManager.swift */,
+			);
+			path = CacheManager;
+			sourceTree = "<group>";
+		};
+		46E3C82B2273912A00511406 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				46E3C82C2273912B00511406 /* WebService.swift */,
+				46E3C82D2273912B00511406 /* WebService+Download.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		46E3C8352273929F00511406 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46E3C8332273928E00511406 /* UnsplashImage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E3C82F2273912B00511406 /* CacheManager.swift in Sources */,
+				46E3C8302273912B00511406 /* CachedImageView.swift in Sources */,
+				46E3C8312273912B00511406 /* WebService.swift in Sources */,
+				46E3C8342273928E00511406 /* UnsplashImage.swift in Sources */,
+				46E3C8322273912B00511406 /* WebService+Download.swift in Sources */,
+				46E3C82E2273912B00511406 /* InternetConnectivityManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
