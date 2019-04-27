@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 	s.description  = "An iOS HTTP Library written in Swift to download multiple images & other 				data."
 	s.homepage     = "https://github.com/Abhishek-001/Wonder-async"
  
-	s.license      = { :type => 'MIT' }
+	s.license      = { :type => 'MIT', :file => 'License' }
 
   	s.author       = { "Abhishek Rathi" => "work.abhirathi@gmail.com" }
  	s.platform     = :ios, "11.0"
