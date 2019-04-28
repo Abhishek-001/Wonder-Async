@@ -36,10 +36,8 @@
 		466DBF592275BA850030EBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		466DBF5B2275BA850030EBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		466DBF5D2275BA850030EBBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		466DBF5F2275BA850030EBBF /* Pinterest_SoulVana.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pinterest_SoulVana.xcdatamodel; sourceTree = "<group>"; };
 		466DBF602275BA850030EBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		466DBF612275BA850030EBBF /* Pinterest-SoulVana.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Pinterest-SoulVana.xcodeproj"; sourceTree = "<group>"; };
-		466DBF672275BAFA0030EBBF /* LoremIpsum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremIpsum.swift; sourceTree = "<group>"; };
 		46E3C81C227390FB00511406 /* Wonder_Async.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wonder_Async.h; sourceTree = "<group>"; };
 		46E3C81D227390FB00511406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E3C8262273912A00511406 /* InternetConnectivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetConnectivityManager.swift; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 			children = (
 				466DBF4C2275BA840030EBBF /* Classes */,
 				466DBF562275BA850030EBBF /* Supporting Files */,
-				466DBF5E2275BA850030EBBF /* Pinterest_SoulVana.xcdatamodeld */,
 				466DBF602275BA850030EBBF /* Info.plist */,
 			);
 			path = "Pinterest-SoulVana";
@@ -103,7 +100,6 @@
 		466DBF4F2275BA850030EBBF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				466DBF672275BAFA0030EBBF /* LoremIpsum.swift */,
 				466DBF502275BA850030EBBF /* UnsplashImage.swift */,
 			);
 			path = Models;
@@ -546,19 +542,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		466DBF5E2275BA850030EBBF /* Pinterest_SoulVana.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				466DBF5F2275BA850030EBBF /* Pinterest_SoulVana.xcdatamodel */,
-			);
-			currentVersion = 466DBF5F2275BA850030EBBF /* Pinterest_SoulVana.xcdatamodel */;
-			path = Pinterest_SoulVana.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 46E3C810227390FB00511406 /* Project object */;
 }

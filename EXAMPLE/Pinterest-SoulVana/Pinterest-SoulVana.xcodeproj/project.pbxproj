@@ -14,7 +14,6 @@
 		462D5049226E11B700868768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462D5048226E11B700868768 /* Assets.xcassets */; };
 		462D504C226E11B700868768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462D504A226E11B700868768 /* LaunchScreen.storyboard */; };
 		462D5065226F312600868768 /* HomePinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D5064226F312600868768 /* HomePinCell.swift */; };
-		462D5067226F3B1E00868768 /* LoremIpsum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D5066226F3B1E00868768 /* LoremIpsum.swift */; };
 		462D5069226F853500868768 /* UnsplashImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D5068226F853500868768 /* UnsplashImage.swift */; };
 		467A77DB22759C5100F1CB91 /* Wonder_Async.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467A77DA22759C5100F1CB91 /* Wonder_Async.framework */; };
 		467A77DC22759C5100F1CB91 /* Wonder_Async.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 467A77DA22759C5100F1CB91 /* Wonder_Async.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -234,7 +233,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				462D5067226F3B1E00868768 /* LoremIpsum.swift in Sources */,
 				462D5041226E11B200868768 /* HomeCollectionViewController.swift in Sources */,
 				462D5047226E11B200868768 /* Pinterest_SoulVana.xcdatamodeld in Sources */,
 				46E3C80E2273847400511406 /* PopupImageViewController.swift in Sources */,
