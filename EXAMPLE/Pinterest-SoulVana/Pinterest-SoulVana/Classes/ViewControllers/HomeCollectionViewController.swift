@@ -13,7 +13,7 @@ class HomeCollectionViewController: UICollectionViewController  {
     
     let cellPadding : CGFloat = 8
     var cellWidth : CGFloat?
-    lazy var unplashImages = [UnsplashImage]()
+    lazy var unsplashImages = [UnsplashImage]()
     var loadCount = 0
     var refresher:UIRefreshControl!
     var isFetchingMore = false
@@ -42,11 +42,12 @@ class HomeCollectionViewController: UICollectionViewController  {
 
         WebService.sharedInstance.callRestApi(urlString: testUrl, httpMethod: .get) { (data, response, error) in
             if error != nil {
+                print(error?.localizedDescription)
                 return
             }
             do {
                 let images = try JSONDecoder().decode([UnsplashImage].self, from: data!)
-                self.unplashImages = images
+                self.unsplashImages = images
                 
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
@@ -65,9 +66,11 @@ class HomeCollectionViewController: UICollectionViewController  {
         // Need Unplash Client id to fetch user's images.
         loadCount += 1
 
+        if unsplashImages.count < loadCount { return }
+        
         let unsplashClientID = "?client_id=5ee9e0777c98176231202d428478911d65739428affef15a0b3cf152cf417fc0"
 
-        let profileUrl = unplashImages[loadCount].user.links.photos + unsplashClientID
+        let profileUrl = unsplashImages[loadCount].user.links.photos + unsplashClientID
         
         WebService.sharedInstance.callRestApi(urlString: profileUrl, httpMethod: .get) { (data, response, error) in
             self.isFetchingMore = false
@@ -82,7 +85,7 @@ class HomeCollectionViewController: UICollectionViewController  {
                     self.refresher.endRefreshing()
                 }
                 
-                self.unplashImages.append(contentsOf: images)
+                self.unsplashImages.append(contentsOf: images)
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
@@ -108,7 +111,7 @@ extension HomeCollectionViewController : UICollectionViewDelegateFlowLayout {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return unplashImages.count
+        return unsplashImages.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -119,11 +122,11 @@ extension HomeCollectionViewController : UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         
         if let homePinCell = cell as? HomePinCell {
-            let urlString = unplashImages[indexPath.row].urls.raw
+            let urlString = unsplashImages[indexPath.row].urls.raw
             homePinCell.imageView.loadImage(urlString: urlString + "?&w=\(cellWidth)&h=\(cellWidth!*1.5)")
         }
         
-        if indexPath.row > unplashImages.count - 4 && !isFetchingMore && loadCount < 10 {
+        if indexPath.row > unsplashImages.count - 4 && !isFetchingMore && loadCount < 10 {
             fetchMoreImages()
             isFetchingMore = true
             print("Fetching More data")
@@ -151,7 +154,7 @@ extension HomeCollectionViewController : UICollectionViewDelegateFlowLayout {
         if segue.identifier == "popupImageSegue" {
             let destinationVC = segue.destination as! PopupImageViewController
             let indexPath = sender as! IndexPath
-            let url = unplashImages[indexPath.row].urls.raw
+            let url = unsplashImages[indexPath.row].urls.raw
             destinationVC.imageUrl = url
         }
     }
