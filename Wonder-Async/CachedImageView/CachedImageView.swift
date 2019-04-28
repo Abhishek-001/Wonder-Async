@@ -22,8 +22,8 @@ public class CachedImageView: UIImageView {
         
         let urlKey = urlString as NSString
      
-        // check if Image has been Cached.
-        if let data = CacheManager.shared.fetchFromCache(urlString: urlKey as String) {
+        // check if Image has been Cached before even going to Webservice class.
+        if let data = CacheManager.fetchFromCache(urlString: urlKey as String) {
             if let cachedImage = UIImage(data: data){
                 image = cachedImage
                 completion?()

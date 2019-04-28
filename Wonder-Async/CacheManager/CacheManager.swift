@@ -10,17 +10,15 @@ import Foundation
 
 public class CacheManager: NSObject {
     
-    public static var shared = CacheManager()
-    public var cache : URLCache!
-    
-    public func setupCache(memoryCapacityMB: Int){
-        let memoryCapacityBytes = memoryCapacityMB * 1024 * 1024
-        self.cache = URLCache(memoryCapacity: memoryCapacityBytes, diskCapacity: 0, diskPath: nil)
+    public static func setupCache(memoryCapacityMB: Int){
+        
+        let cacheBytes = memoryCapacityMB * 1024 * 1024
+        let cache = URLCache(memoryCapacity: cacheBytes, diskCapacity: 0, diskPath: nil)
         URLCache.shared = cache
 
     }
     
-    public func saveInCache(urlString : String , data: Data, response: URLResponse){
+    public static func saveInCache(urlString : String , data: Data, response: URLResponse){
         guard let url = URL(string: urlString) else { return }
         let request = URLRequest(url: url)
         
@@ -28,7 +26,7 @@ public class CacheManager: NSObject {
         URLCache.shared.storeCachedResponse(cachedData, for: request)
     }
     
-    public func fetchFromCache(urlString : String) -> Data? {
+    public static func fetchFromCache(urlString : String) -> Data? {
         guard let url = URL(string: urlString) else { return nil }
         let request = URLRequest(url: url)
         

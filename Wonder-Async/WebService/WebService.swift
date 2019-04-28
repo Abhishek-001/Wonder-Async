@@ -45,6 +45,11 @@ public class WebService: NSObject, URLSessionDelegate {
             return
         }
         
+        if let data = CacheManager.fetchFromCache(urlString: urlString as String) {
+            completion(data,nil,nil)
+            return
+        }
+        
         let session = URLSession.init(configuration: .default)
         guard let url = URL(string: urlString) else { return }
         
@@ -78,7 +83,7 @@ public class WebService: NSObject, URLSessionDelegate {
             
             let cacheThread = DispatchQueue.init(label: "saveCache")
             cacheThread.async {
-                CacheManager.shared.saveInCache(urlString: urlString , data: data, response: response!)
+                CacheManager.saveInCache(urlString: urlString , data: data, response: response!)
             }
             
             completion(data, response ,error)

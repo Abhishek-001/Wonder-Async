@@ -48,7 +48,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="177" height="209"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hongkong" translatesAutoresizingMaskIntoConstraints="NO" id="6de-AY-Lj7" customClass="CachedImageView" customModule="Wonder_Async">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6de-AY-Lj7" customClass="CachedImageView" customModule="Wonder_Async">
                                             <rect key="frame" x="0.0" y="0.0" width="177" height="209"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -141,6 +141,5 @@
     </scenes>
     <resources>
         <image name="cancel" width="256" height="256"/>
-        <image name="hongkong" width="2671" height="4006"/>
     </resources>
 </document>

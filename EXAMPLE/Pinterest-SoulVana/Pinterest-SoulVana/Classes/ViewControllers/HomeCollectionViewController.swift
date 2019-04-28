@@ -28,7 +28,7 @@ class HomeCollectionViewController: UICollectionViewController  {
         self.collectionView!.refreshControl = refresher
         
         // Setup Configurable Cache
-        CacheManager.shared.setupCache(memoryCapacityMB: 10)
+        CacheManager.setupCache(memoryCapacityMB: 10)
         loadImages()
     }
     
@@ -63,12 +63,11 @@ class HomeCollectionViewController: UICollectionViewController  {
         
         // fetching photos from unsplash User's profile provided in Test json.
         // Need Unplash Client id to fetch user's images.
-        
-        let unsplashClientID = "?client_id=5ee9e0777c98176231202d428478911d65739428affef15a0b3cf152cf417fc0"
-        
-        let profileUrl = unplashImages[loadCount].user.links.photos + unsplashClientID
-        
         loadCount += 1
+
+        let unsplashClientID = "?client_id=5ee9e0777c98176231202d428478911d65739428affef15a0b3cf152cf417fc0"
+
+        let profileUrl = unplashImages[loadCount].user.links.photos + unsplashClientID
         
         WebService.sharedInstance.callRestApi(urlString: profileUrl, httpMethod: .get) { (data, response, error) in
             self.isFetchingMore = false
@@ -97,7 +96,7 @@ class HomeCollectionViewController: UICollectionViewController  {
     
     // Clear ImageView Cache incase of low app memory warning
     override func didReceiveMemoryWarning() {
-        CacheManager.shared.cache.removeAllCachedResponses()
+        URLCache.shared.removeAllCachedResponses()
     }
   
 }
