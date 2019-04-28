@@ -8,3 +8,7 @@ Supports:
 3. Inbuilt Class CachedImageView that has loadUrl method for Asynchronously loading Images.
 4. Cancel any request anytime by using this WebService's method -> WebService.sharedInstance.cancelTask(urlString: ) by providing url string.
 5. Configurable CacheManager Class that can be used to cache data in-memory.
+
+
+#Example 
+Demo Example includes how to use library in your project. 
