@@ -16,6 +16,8 @@
 		462D5065226F312600868768 /* HomePinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D5064226F312600868768 /* HomePinCell.swift */; };
 		462D5067226F3B1E00868768 /* LoremIpsum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D5066226F3B1E00868768 /* LoremIpsum.swift */; };
 		462D5069226F853500868768 /* UnsplashImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D5068226F853500868768 /* UnsplashImage.swift */; };
+		467A77E522759CB300F1CB91 /* Wonder_Async.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467A77E422759CB300F1CB91 /* Wonder_Async.framework */; };
+		467A77E622759CB300F1CB91 /* Wonder_Async.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 467A77E422759CB300F1CB91 /* Wonder_Async.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		46E3C80E2273847400511406 /* PopupImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E3C80D2273847400511406 /* PopupImageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				467A77E622759CB300F1CB91 /* Wonder_Async.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,6 +47,7 @@
 		462D5064226F312600868768 /* HomePinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePinCell.swift; sourceTree = "<group>"; };
 		462D5066226F3B1E00868768 /* LoremIpsum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremIpsum.swift; sourceTree = "<group>"; };
 		462D5068226F853500868768 /* UnsplashImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImage.swift; sourceTree = "<group>"; };
+		467A77E422759CB300F1CB91 /* Wonder_Async.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Wonder_Async.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E3C80D2273847400511406 /* PopupImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467A77E522759CB300F1CB91 /* Wonder_Async.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,7 @@
 		462D5032226E11B200868768 = {
 			isa = PBXGroup;
 			children = (
+				467A77E422759CB300F1CB91 /* Wonder_Async.framework */,
 				462D503D226E11B200868768 /* Pinterest-SoulVana */,
 				462D503C226E11B200868768 /* Products */,
 			);
