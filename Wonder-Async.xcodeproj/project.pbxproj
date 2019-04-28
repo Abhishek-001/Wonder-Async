@@ -26,7 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		467A77D622759B1800F1CB91 /* Wonder_Async.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Wonder_Async.framework; path = "/Volumes/DATA/Learning Projects/Wonder-Async/build/Debug-iphoneos/Wonder_Async.framework"; sourceTree = "<absolute>"; };
+		466DBF462275B6970030EBBF /* Wonder_Async.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Wonder_Async.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DE84982275B27E009B1178 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46DE849C2275B27E009B1178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46DE849E2275B27E009B1178 /* LoremIpsum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremIpsum.swift; sourceTree = "<group>"; };
@@ -173,6 +173,7 @@
 			children = (
 				46DE84962275B25B009B1178 /* EXAMPLE */,
 				46E3C81B227390FB00511406 /* Wonder-Async */,
+				466DBF462275B6970030EBBF /* Wonder_Async.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,7 +252,7 @@
 			);
 			name = "Wonder-Async";
 			productName = "Wonder-Async";
-			productReference = 467A77D622759B1800F1CB91 /* Wonder_Async.framework */;
+			productReference = 466DBF462275B6970030EBBF /* Wonder_Async.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
