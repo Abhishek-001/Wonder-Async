@@ -29,7 +29,6 @@
 		466DBF462275B6970030EBBF /* Wonder_Async.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Wonder_Async.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DE84982275B27E009B1178 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46DE849C2275B27E009B1178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46DE849E2275B27E009B1178 /* LoremIpsum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremIpsum.swift; sourceTree = "<group>"; };
 		46DE849F2275B27E009B1178 /* UnsplashImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImage.swift; sourceTree = "<group>"; };
 		46DE84A12275B27E009B1178 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		46DE84A22275B27E009B1178 /* PopupImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupImageViewController.swift; sourceTree = "<group>"; };
@@ -111,7 +110,6 @@
 		46DE849D2275B27E009B1178 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				46DE849E2275B27E009B1178 /* LoremIpsum.swift */,
 				46DE849F2275B27E009B1178 /* UnsplashImage.swift */,
 			);
 			path = Models;
