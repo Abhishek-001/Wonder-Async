@@ -22,6 +22,7 @@ class PopupImageViewController : UIViewController {
     
     override func viewDidLoad() {
         popupImageView.contentMode = .scaleAspectFill
+        popupImageView.clipsToBounds = true
         popupImageView.alpha = 0
         popupImageView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
     }

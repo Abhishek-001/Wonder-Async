@@ -102,13 +102,14 @@
                                     <constraint firstAttribute="height" constant="497" id="l8z-yb-7P0"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uka-bi-eWC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uka-bi-eWC">
                                 <rect key="frame" x="167.5" y="587" width="40" height="40"/>
-                                <color key="backgroundColor" red="0.56470588239999997" green="0.7725490196" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="79Q-hw-FQk"/>
                                     <constraint firstAttribute="height" constant="40" id="n7w-JW-Aez"/>
                                 </constraints>
+                                <state key="normal" image="cancel"/>
                                 <connections>
                                     <action selector="dismissAction:" destination="lYT-rw-2gu" eventType="touchUpInside" id="f4H-hb-Uud"/>
                                 </connections>
@@ -139,6 +140,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cancel" width="256" height="256"/>
         <image name="hongkong" width="2671" height="4006"/>
     </resources>
 </document>

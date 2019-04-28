@@ -28,9 +28,15 @@ public class WebService: NSObject, URLSessionDelegate {
     public static let sharedInstance = WebService()
     lazy var activeRequests: [URL: URLSession] = [:]
 
-    // Completion Handler block that gives Data & Error object after finishing api call.
     
     public func callRestApi(urlString : String, httpMethod: HTTPMethod,  withCompletion completion: @escaping (Data?, URLResponse?, Error?) -> Void ){
+        
+        return self.callRestApi(urlString: urlString, httpMethod: httpMethod, body: nil, timeOut: 0 , withCompletion: completion)
+
+    }
+    
+    // Completion Handler block that gives Data & Error object after finishing api call.
+    public func callRestApi(urlString : String, httpMethod: HTTPMethod, body : Data? = nil, timeOut : Double = 0 , withCompletion completion: @escaping (Data?, URLResponse?, Error?) -> Void ){
         
         // Checks for Internet availablility & returns Error if device not connected to internet.
         if !InternetConnectivityManager.sharedInstance.connectedToNetwork() {
@@ -41,8 +47,17 @@ public class WebService: NSObject, URLSessionDelegate {
         
         let session = URLSession.init(configuration: .default)
         guard let url = URL(string: urlString) else { return }
-
+        
         var urlRequest = URLRequest(url: url)
+        
+        if let body = body {
+            urlRequest.httpBody = body
+        }
+        
+        if timeOut > 0 {
+            urlRequest.timeoutInterval = timeOut
+        }
+        
         urlRequest.httpMethod = httpMethod.rawValue
         
         session.dataTask(with: urlRequest ) { (data, response, error) in
@@ -55,23 +70,23 @@ public class WebService: NSObject, URLSessionDelegate {
                 completion(nil, response ,error)
                 return
             }
-
+            
             guard let data = data else {
                 completion(nil, nil, NSError(domain: "", code: 1, userInfo: [ NSLocalizedDescriptionKey:"Couldn't load Data"]))
                 return
             }
-        
+            
             let cacheThread = DispatchQueue.init(label: "saveCache")
             cacheThread.async {
                 CacheManager.shared.saveInCache(urlString: urlString , data: data, response: response!)
             }
             
             completion(data, response ,error)
-        
-        }.resume()
+            
+            }.resume()
         
         activeRequests[url] = session
-
+        
     }
     
 //---------------------------------------------------------------------------------------
