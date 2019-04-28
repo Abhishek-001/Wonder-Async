@@ -16,9 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		46DE84B42275B27E009B1178 /* PBXContainerItemProxy */ = {
+		466DBF652275BA850030EBBF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46DE84B02275B27E009B1178 /* Pinterest-SoulVana.xcodeproj */;
+			containerPortal = 466DBF612275BA850030EBBF /* Pinterest-SoulVana.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 462D503B226E11B200868768;
 			remoteInfo = "Pinterest-SoulVana";
@@ -27,18 +27,19 @@
 
 /* Begin PBXFileReference section */
 		466DBF462275B6970030EBBF /* Wonder_Async.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Wonder_Async.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		46DE84982275B27E009B1178 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		46DE849C2275B27E009B1178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46DE849F2275B27E009B1178 /* UnsplashImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImage.swift; sourceTree = "<group>"; };
-		46DE84A12275B27E009B1178 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
-		46DE84A22275B27E009B1178 /* PopupImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupImageViewController.swift; sourceTree = "<group>"; };
-		46DE84A42275B27E009B1178 /* HomePinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePinCell.swift; sourceTree = "<group>"; };
-		46DE84A82275B27E009B1178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		46DE84AA2275B27E009B1178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		46DE84AC2275B27E009B1178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		46DE84AE2275B27E009B1178 /* Pinterest_SoulVana.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pinterest_SoulVana.xcdatamodel; sourceTree = "<group>"; };
-		46DE84AF2275B27E009B1178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46DE84B02275B27E009B1178 /* Pinterest-SoulVana.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Pinterest-SoulVana.xcodeproj"; sourceTree = "<group>"; };
+		466DBF4A2275BA840030EBBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		466DBF4E2275BA850030EBBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		466DBF502275BA850030EBBF /* UnsplashImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImage.swift; sourceTree = "<group>"; };
+		466DBF522275BA850030EBBF /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		466DBF532275BA850030EBBF /* PopupImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupImageViewController.swift; sourceTree = "<group>"; };
+		466DBF552275BA850030EBBF /* HomePinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePinCell.swift; sourceTree = "<group>"; };
+		466DBF592275BA850030EBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		466DBF5B2275BA850030EBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		466DBF5D2275BA850030EBBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		466DBF5F2275BA850030EBBF /* Pinterest_SoulVana.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pinterest_SoulVana.xcdatamodel; sourceTree = "<group>"; };
+		466DBF602275BA850030EBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		466DBF612275BA850030EBBF /* Pinterest-SoulVana.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Pinterest-SoulVana.xcodeproj"; sourceTree = "<group>"; };
+		466DBF672275BAFA0030EBBF /* LoremIpsum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremIpsum.swift; sourceTree = "<group>"; };
 		46E3C81C227390FB00511406 /* Wonder_Async.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wonder_Async.h; sourceTree = "<group>"; };
 		46E3C81D227390FB00511406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E3C8262273912A00511406 /* InternetConnectivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetConnectivityManager.swift; sourceTree = "<group>"; };
@@ -59,111 +60,112 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		46DE84962275B25B009B1178 /* EXAMPLE */ = {
+		466DBF492275BA840030EBBF /* Pinterest-SoulVana */ = {
 			isa = PBXGroup;
 			children = (
-				46DE84972275B27E009B1178 /* Pinterest-SoulVana */,
-			);
-			path = EXAMPLE;
-			sourceTree = "<group>";
-		};
-		46DE84972275B27E009B1178 /* Pinterest-SoulVana */ = {
-			isa = PBXGroup;
-			children = (
-				46DE84982275B27E009B1178 /* README.md */,
-				46DE84992275B27E009B1178 /* Pinterest-SoulVana */,
-				46DE84B02275B27E009B1178 /* Pinterest-SoulVana.xcodeproj */,
+				466DBF4A2275BA840030EBBF /* README.md */,
+				466DBF4B2275BA840030EBBF /* Pinterest-SoulVana */,
+				466DBF612275BA850030EBBF /* Pinterest-SoulVana.xcodeproj */,
 			);
 			path = "Pinterest-SoulVana";
 			sourceTree = "<group>";
 		};
-		46DE84992275B27E009B1178 /* Pinterest-SoulVana */ = {
+		466DBF4B2275BA840030EBBF /* Pinterest-SoulVana */ = {
 			isa = PBXGroup;
 			children = (
-				46DE849A2275B27E009B1178 /* Classes */,
-				46DE84A52275B27E009B1178 /* Supporting Files */,
-				46DE84AD2275B27E009B1178 /* Pinterest_SoulVana.xcdatamodeld */,
-				46DE84AF2275B27E009B1178 /* Info.plist */,
+				466DBF4C2275BA840030EBBF /* Classes */,
+				466DBF562275BA850030EBBF /* Supporting Files */,
+				466DBF5E2275BA850030EBBF /* Pinterest_SoulVana.xcdatamodeld */,
+				466DBF602275BA850030EBBF /* Info.plist */,
 			);
 			path = "Pinterest-SoulVana";
 			sourceTree = "<group>";
 		};
-		46DE849A2275B27E009B1178 /* Classes */ = {
+		466DBF4C2275BA840030EBBF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				46DE849B2275B27E009B1178 /* App */,
-				46DE849D2275B27E009B1178 /* Models */,
-				46DE84A02275B27E009B1178 /* ViewControllers */,
-				46DE84A32275B27E009B1178 /* Views */,
+				466DBF4D2275BA840030EBBF /* App */,
+				466DBF4F2275BA850030EBBF /* Models */,
+				466DBF512275BA850030EBBF /* ViewControllers */,
+				466DBF542275BA850030EBBF /* Views */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		46DE849B2275B27E009B1178 /* App */ = {
+		466DBF4D2275BA840030EBBF /* App */ = {
 			isa = PBXGroup;
 			children = (
-				46DE849C2275B27E009B1178 /* AppDelegate.swift */,
+				466DBF4E2275BA850030EBBF /* AppDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		46DE849D2275B27E009B1178 /* Models */ = {
+		466DBF4F2275BA850030EBBF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				46DE849F2275B27E009B1178 /* UnsplashImage.swift */,
+				466DBF672275BAFA0030EBBF /* LoremIpsum.swift */,
+				466DBF502275BA850030EBBF /* UnsplashImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		46DE84A02275B27E009B1178 /* ViewControllers */ = {
+		466DBF512275BA850030EBBF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				46DE84A12275B27E009B1178 /* HomeCollectionViewController.swift */,
-				46DE84A22275B27E009B1178 /* PopupImageViewController.swift */,
+				466DBF522275BA850030EBBF /* HomeCollectionViewController.swift */,
+				466DBF532275BA850030EBBF /* PopupImageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		46DE84A32275B27E009B1178 /* Views */ = {
+		466DBF542275BA850030EBBF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				46DE84A42275B27E009B1178 /* HomePinCell.swift */,
+				466DBF552275BA850030EBBF /* HomePinCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		46DE84A52275B27E009B1178 /* Supporting Files */ = {
+		466DBF562275BA850030EBBF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				46DE84A62275B27E009B1178 /* Storyboards */,
-				46DE84AB2275B27E009B1178 /* Images */,
+				466DBF572275BA850030EBBF /* Storyboards */,
+				466DBF5C2275BA850030EBBF /* Images */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		46DE84A62275B27E009B1178 /* Storyboards */ = {
+		466DBF572275BA850030EBBF /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				46DE84A72275B27E009B1178 /* LaunchScreen.storyboard */,
-				46DE84A92275B27E009B1178 /* Main.storyboard */,
+				466DBF582275BA850030EBBF /* LaunchScreen.storyboard */,
+				466DBF5A2275BA850030EBBF /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		46DE84AB2275B27E009B1178 /* Images */ = {
+		466DBF5C2275BA850030EBBF /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				46DE84AC2275B27E009B1178 /* Assets.xcassets */,
+				466DBF5D2275BA850030EBBF /* Assets.xcassets */,
 			);
 			path = Images;
 			sourceTree = "<group>";
 		};
-		46DE84B12275B27E009B1178 /* Products */ = {
+		466DBF622275BA850030EBBF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46DE84B52275B27E009B1178 /* Pinterest-SoulVana.app */,
+				466DBF662275BA850030EBBF /* Pinterest-SoulVana.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		46DE84962275B25B009B1178 /* EXAMPLE */ = {
+			isa = PBXGroup;
+			children = (
+				466DBF492275BA840030EBBF /* Pinterest-SoulVana */,
+			);
+			path = EXAMPLE;
 			sourceTree = "<group>";
 		};
 		46E3C80F227390FB00511406 = {
@@ -280,8 +282,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 46DE84B12275B27E009B1178 /* Products */;
-					ProjectRef = 46DE84B02275B27E009B1178 /* Pinterest-SoulVana.xcodeproj */;
+					ProductGroup = 466DBF622275BA850030EBBF /* Products */;
+					ProjectRef = 466DBF612275BA850030EBBF /* Pinterest-SoulVana.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -292,11 +294,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		46DE84B52275B27E009B1178 /* Pinterest-SoulVana.app */ = {
+		466DBF662275BA850030EBBF /* Pinterest-SoulVana.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "Pinterest-SoulVana.app";
-			remoteRef = 46DE84B42275B27E009B1178 /* PBXContainerItemProxy */;
+			remoteRef = 466DBF652275BA850030EBBF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -327,18 +329,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		46DE84A72275B27E009B1178 /* LaunchScreen.storyboard */ = {
+		466DBF582275BA850030EBBF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				46DE84A82275B27E009B1178 /* Base */,
+				466DBF592275BA850030EBBF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		46DE84A92275B27E009B1178 /* Main.storyboard */ = {
+		466DBF5A2275BA850030EBBF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				46DE84AA2275B27E009B1178 /* Base */,
+				466DBF5B2275BA850030EBBF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -544,12 +546,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		46DE84AD2275B27E009B1178 /* Pinterest_SoulVana.xcdatamodeld */ = {
+		466DBF5E2275BA850030EBBF /* Pinterest_SoulVana.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				46DE84AE2275B27E009B1178 /* Pinterest_SoulVana.xcdatamodel */,
+				466DBF5F2275BA850030EBBF /* Pinterest_SoulVana.xcdatamodel */,
 			);
-			currentVersion = 46DE84AE2275B27E009B1178 /* Pinterest_SoulVana.xcdatamodel */;
+			currentVersion = 466DBF5F2275BA850030EBBF /* Pinterest_SoulVana.xcdatamodel */;
 			path = Pinterest_SoulVana.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
