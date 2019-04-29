@@ -12,5 +12,4 @@ import Wonder_Async
 class HomePinCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView : CachedImageView!
-    var unsplashImage : UnsplashImage?
 }
