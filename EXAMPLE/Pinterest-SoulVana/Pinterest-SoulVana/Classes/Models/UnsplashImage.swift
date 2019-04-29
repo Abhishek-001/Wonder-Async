@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Wonder_Async
 
 class UnsplashImage: Decodable {
     
@@ -154,5 +155,25 @@ class ProfileImage: Decodable {
         self.small = small
         self.medium = medium
         self.large = large
+    }
+}
+
+
+extension UnsplashImage {
+    
+    static func getImages(urlString : String , completion: @escaping (([UnsplashImage]) -> ())){
+        WebService.sharedInstance.callRestApi(urlString: urlString, httpMethod: .get) { (data, response, error) in
+            if error != nil {
+                print(error?.localizedDescription)
+                return
+            }
+            do {
+                let images = try JSONDecoder().decode([UnsplashImage].self, from: data!)
+                completion(images)
+                
+            } catch {
+                print(error)
+            }
+        }
     }
 }

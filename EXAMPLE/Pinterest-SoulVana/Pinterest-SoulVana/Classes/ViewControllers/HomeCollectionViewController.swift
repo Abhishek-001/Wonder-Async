@@ -13,7 +13,13 @@ class HomeCollectionViewController: UICollectionViewController  {
     
     let cellPadding : CGFloat = 8
     var cellWidth : CGFloat?
-    lazy var unsplashImages = [UnsplashImage]()
+    var unsplashImages = [UnsplashImage]() {
+        // Reloads collectionview Whenever data is changed.
+        didSet{
+            self.collectionView.reloadData()
+        }
+    }
+    
     var loadCount = 0
     var refresher:UIRefreshControl!
     var isFetchingMore = false
@@ -29,6 +35,7 @@ class HomeCollectionViewController: UICollectionViewController  {
         
         // Setup Configurable Cache
         CacheManager.setupCache(memoryCapacityMB: 10)
+        
         loadImages()
     }
     
@@ -39,25 +46,10 @@ class HomeCollectionViewController: UICollectionViewController  {
     
     fileprivate func loadImages() {
         let testUrl = "http://pastebin.com/raw/wgkJgazE"
-
-        WebService.sharedInstance.callRestApi(urlString: testUrl, httpMethod: .get) { (data, response, error) in
-            if error != nil {
-                print(error?.localizedDescription)
-                return
-            }
-            do {
-                let images = try JSONDecoder().decode([UnsplashImage].self, from: data!)
-                self.unsplashImages = images
-                
-                DispatchQueue.main.async {
-                    self.collectionView.reloadData()
-                }
-                
-            } catch {
-                print(error)
-            }
-        }
         
+        UnsplashImage.getImages(urlString: testUrl) { (images) in
+            self.unsplashImages = images
+        }
     }
     
     @objc fileprivate func fetchMoreImages(){
@@ -72,27 +64,14 @@ class HomeCollectionViewController: UICollectionViewController  {
 
         let profileUrl = unsplashImages[loadCount].user.links.photos + unsplashClientID
         
-        WebService.sharedInstance.callRestApi(urlString: profileUrl, httpMethod: .get) { (data, response, error) in
+        UnsplashImage.getImages(urlString: profileUrl) { (images) in
             self.isFetchingMore = false
-
-            if error != nil {
-                return
+            
+            DispatchQueue.main.async {
+                self.refresher.endRefreshing()
             }
-            do {
-                let images = try JSONDecoder().decode([UnsplashImage].self, from: data!)
-                
-                DispatchQueue.main.async {
-                    self.refresher.endRefreshing()
-                }
-                
-                self.unsplashImages.append(contentsOf: images)
-                DispatchQueue.main.async {
-                    self.collectionView.reloadData()
-                }
-                
-            } catch {
-                print(error)
-            }
+            
+            self.unsplashImages.append(contentsOf: images)
         }
     
     }
@@ -126,7 +105,7 @@ extension HomeCollectionViewController : UICollectionViewDelegateFlowLayout {
             homePinCell.imageView.loadImage(urlString: urlString + "?&w=\(cellWidth)&h=\(cellWidth!*1.5)")
         }
         
-        if indexPath.row > unsplashImages.count - 4 && !isFetchingMore && loadCount < 10 {
+        if indexPath.row > unsplashImages.count - 4 && !isFetchingMore && loadCount <= 10 {
             fetchMoreImages()
             isFetchingMore = true
             print("Fetching More data")
