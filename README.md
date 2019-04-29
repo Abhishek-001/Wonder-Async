@@ -9,6 +9,20 @@ Supports:
 4. Cancel any request anytime by using this WebService's method -> WebService.sharedInstance.cancelTask(urlString: ) by providing url string.
 5. Configurable CacheManager Class that can be used to cache data in-memory.
 
+## Usage - CachedImageView
+```
+  // import Pod
+  import Wonder_Async
+  ...
+  
+  // make your imageviews object of CachedImageView
+  @IBOutlet weak var popupImageView: CachedImageView!
+  ....
+  
+  // use loadImage for loading Image in CachedImageView object 
+  popupImageView.loadImage(urlString: "imageUrlString")
+  
+```
 
-#Example 
-Demo Example includes how to use library in your project. 
+### Example
+    Demo Example includes how to use library in your project. 
