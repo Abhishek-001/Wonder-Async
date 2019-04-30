@@ -13,10 +13,11 @@ class HomeCollectionViewController: UICollectionViewController  {
     
     let cellPadding : CGFloat = 8
     var cellWidth : CGFloat?
-    var unsplashImages = [UnsplashImage]() {
-        // Reloads collectionview Whenever data is changed.
+    var unsplashImages = [UnsplashImage](){
         didSet{
-            self.collectionView.reloadData()
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
         }
     }
     
@@ -64,7 +65,7 @@ class HomeCollectionViewController: UICollectionViewController  {
 
         let profileUrl = unsplashImages[loadCount].user.links.photos + unsplashClientID
         
-        UnsplashImage.getImages(urlString: profileUrl) { (images) in
+        UnsplashImage.getImages(urlString: profileUrl) { [unowned self] (images) in
             self.isFetchingMore = false
             
             DispatchQueue.main.async {
