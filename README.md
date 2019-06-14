@@ -2,8 +2,6 @@
 
 An iOS HTTP Library written in Swift to download multiple images & other data Asynchronously and for iOS Engineers who want to implement Pinterest/ Instargram like smooth image loading in their iOS Applications.
 
-# NOTE: This was library was created as a Task for recruitment.
-
 # Supports:
 1. Asynchronous Multiple Requests
 2. Configurable Cache that can be used to cache images.
